@@ -25,6 +25,9 @@ module.exports = {
                 renderHTML('./login.html', res);
                 break;
             default:
+                res.writeHead(404);
+                res.write('Path is not defined');
+                res.end();
                 break;
         }
     }
