@@ -3,5 +3,9 @@
 {{# if condition}}
     condition is met
 {{ else }}
-    condtion is not met
+    condition is not met
 {{/if}}
+
+{{# each anArray as | value key|}}
+    {{value}} : {{key}}
+{{/ each}}
